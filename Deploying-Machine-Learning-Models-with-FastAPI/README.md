@@ -1,4 +1,4 @@
-# 🌸 Iris Classification API with FastAPI
+# Iris Classification API with FastAPI
 
 A production-ready machine learning API for classifying Iris flower species using FastAPI and scikit-learn. This project demonstrates best practices for deploying ML models as RESTful web services.
 
@@ -481,3 +481,45 @@ Potential enhancements:
 **Happy Classifying! 🌸**
 
 Built with ❤️ using FastAPI and scikit-learn
+
+## Day 2 - Exploring the Project Structure
+
+Today I explored the project folders and checked the Python files to understand how the project is organised.
+
+### 1. Project folders
+
+I found three main folders:
+
+- `app` - Contains the main application file.
+- `scripts` - Contains the model training and deployment scripts.
+- `venv` - Contains the Python virtual environment.
+
+I also checked the other files, including Dockerfile, requirements.txt, README.md, model metadata and the trained model file.
+
+### 2. Main file
+
+The main file I found is `app/main.py`. It contains the FastAPI application and the endpoints used for predictions and health checks.
+
+### 3. Important Python files
+
+**app/main.py**
+- Loads the trained model.
+- Takes flower measurements as input.
+- Predicts the flower species.
+- Provides health check and model information.
+
+**scripts/train_model.py**
+- Contains the `train_iris_model()` function.
+- Used for training the Iris machine learning model.
+- Saves the trained model and its metadata.
+
+**scripts/deployment_demo.py**
+- Contains the `demo_workflow()` function.
+- Shows the deployment process and Docker commands.
+- Includes information about monitoring the application.
+
+### 4. What I understood today
+
+I understood how the project files are organised and how different Python files are used for training the model, making predictions and deployment.
+
+I also learned about functions, classes and modules by exploring the existing code.
