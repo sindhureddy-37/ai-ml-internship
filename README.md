@@ -1,14 +1,13 @@
-
 # AI/ML Internship - Week 1 Day 1
 
 ## Project: Clone & Run 60
 
 ### Objective
-Set up a local AI/ML development environment and run FastAPI and MLflow.
+Set up an AI/ML environment and run an open-source machine learning API.
 
 ### Environment
-- Python 3.14.6
-- Virtual Environment: venv
+- Python 3.14.6 (initial setup)
+- Python 3.11.9 (Iris project)
 - MLflow 3.18.0
 - FastAPI
 - Uvicorn
@@ -17,28 +16,22 @@ Set up a local AI/ML development environment and run FastAPI and MLflow.
 
 ### Completed Tasks
 - Created project workspace.
-- Created and activated Python virtual environment.
-- Installed required Python packages.
-- Verified Docker installation.
-- Created a FastAPI application.
-- Started FastAPI on port 8000.
-- Started MLflow UI on port 5000.
-- Verified both applications in the browser.
+- Created Python virtual environments.
+- Installed required packages.
+- Verified Docker CLI.
+- Started FastAPI application.
+- Started MLflow UI.
+- Cloned an open-source Iris project.
+- Loaded the trained machine learning model.
+- Tested the health endpoint successfully.
+- Tested the prediction endpoint successfully.
+- Predicted Iris Setosa with 100% confidence.
 
-### Run FastAPI
+### Open-Source Repository
+https://github.com/Prabhu6626/Deploying-Machine-Learning-Models-with-FastAPI
+
+### Run Iris API
 ```powershell
-uvicorn app:app --reload
-```
-
-### Run MLflow
-```powershell
-mlflow ui --host 127.0.0.1 --port 5000
-```
-
-### Application URLs
-- FastAPI: http://127.0.0.1:8000
-- Health Check: http://127.0.0.1:8000/health
-- MLflow: http://127.0.0.1:5000
-
-### Status
-Local application setup test completed successfully.
+cd Deploying-Machine-Learning-Models-with-FastAPI
+.\venv\Scripts\Activate.ps1
+uvicorn app.main:app --reload --port 8001

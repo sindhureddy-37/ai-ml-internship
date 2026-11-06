@@ -1,4 +1,18 @@
+# Python virtual environments
 venv/
+**/venv/
+.env/
+
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# MLflow database
 mlflow.db
+
+# Jupyter files
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
